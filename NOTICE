@@ -1,0 +1,65 @@
+Nakka
+Copyright 2026 Nakka
+
+Licensed under the Apache License, Version 2.0. The full licence text is in
+LICENSE, and a copy ships inside the extension as LICENSE.txt.
+
+================================================================================
+Origin
+================================================================================
+
+This product includes software developed by Continue Dev, Inc.
+
+    https://github.com/continuedev/continue
+    Copyright 2023 Continue Dev, Inc.
+    Licensed under the Apache License, Version 2.0
+
+Nakka began as a fork of that project. Continue Dev, Inc. has no involvement in
+Nakka, has not reviewed it, and does not endorse it. "Continue" is their name
+and is used here only to say truthfully where this code came from — Nakka
+claims no rights in it, and the Apache Licence grants none (section 6).
+
+================================================================================
+Changes
+================================================================================
+
+The files in this product have been modified from the originals. The changes
+are structural rather than incidental:
+
+  Tools          Rewritten. The tool set, the names, the arguments, the
+                 descriptions and the implementations are Nakka's own.
+
+  Permissions    Rewritten. Three modes — Manual, Plan, Auto — with a
+                 per-command safety classifier, and a plan mode enforced
+                 read-only at the policy layer rather than by convention.
+
+  Webview        Rebuilt. Transcript, input, tool rows, permission prompts,
+                 diff view, session header and history.
+
+  Providers      Reduced to Anthropic, OpenAI-compatible endpoints and Ollama.
+                 The hosted registry, remote configuration and account layer
+                 were removed.
+
+  Build          No longer downloads anything from Continue Dev, Inc.
+                 infrastructure. Native binaries come from their own upstream
+                 projects.
+
+  Text           Every user-facing string is Nakka's own.
+
+================================================================================
+Third-party components
+================================================================================
+
+These are redistributed under their own licences, which travel with them:
+
+  Inter               gui/public/fonts/Inter/LICENSE.txt      (SIL OFL 1.1)
+  JetBrains Mono      gui/public/fonts/JetBrainsMono/OFL.txt  (SIL OFL 1.1)
+  ripgrep             Microsoft's prebuilt binaries           (MIT)
+  node-sqlite3        TryGhost prebuilt binaries              (BSD-3-Clause)
+
+Remaining dependencies carry their licences in their own npm packages.
+
+Provider names and logos shown in the model picker — Anthropic, OpenAI, Ollama
+and others — are the trademarks of their respective owners. They appear only to
+name the service a user is choosing between. No affiliation or endorsement is
+claimed or implied.

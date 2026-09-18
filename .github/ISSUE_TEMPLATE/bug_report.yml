@@ -1,0 +1,85 @@
+name: Bug report
+description: Something did not work the way it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. The fields below are the ones that usually
+        decide whether a bug can be reproduced — a report without them often
+        cannot be acted on, however clearly it is written.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, and what Nakka did instead of what you expected.
+      placeholder: |
+        I asked it to add a test to src/auth.ts. It read the file, then the
+        row said "Running…" and never finished.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest sequence that brings it back.
+      placeholder: |
+        1. Open a TypeScript project
+        2. Switch to Auto mode
+        3. Ask "add a test for the login function"
+        4. …
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Which mode were you in?
+      options:
+        - Manual
+        - Plan
+        - Auto
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: Which model was selected, and which provider.
+      placeholder: claude-sonnet-4-6 (anthropic) / gpt-5 (openai) / qwen2.5-coder:7b (ollama)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Nakka version
+      description: Extensions view → Nakka → the version under the name.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: vscode
+    attributes:
+      label: VS Code version and operating system
+      description: Help → About, and your OS.
+      placeholder: "VS Code 1.95.0, macOS 15.1 (Apple Silicon)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Anything in the output panel
+      description: >
+        View → Output → pick "Nakka" from the dropdown. Paste anything that
+        looks relevant. **Remove your API key and anything private first** —
+        this issue is public.
+      render: shell
+    validations:
+      required: false

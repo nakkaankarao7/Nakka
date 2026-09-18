@@ -1,0 +1,13 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/nakkaankarao7/Nakka/blob/main/SECURITY.md
+    about: >
+      Please do not open a public issue for a security problem. An open issue
+      tells everyone about it before there is a fix.
+
+  - name: Question about using Nakka
+    url: https://github.com/nakkaankarao7/Nakka/issues?q=is%3Aissue
+    about: >
+      Search the existing issues first — someone may have asked already. If
+      not, open one and describe what you are trying to do.
